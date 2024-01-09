@@ -22,7 +22,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void dodge(View view) {
-
-
+        x=rnd.nextInt(3)+1;
+        if (x==1) {
+            iB1.setImageResource(R.drawable.one);
+            iV1.setImageResource(R.drawable.cat);
+    }
+        if (x==2){
+            iB1.setImageResource(R.drawable.two);
+            iV1.setImageResource(R.drawable.dog);
+        }
+        if (x==3){
+            iB1.setImageResource(R.drawable.three);
+            iV1.setImageResource(R.drawable.rabbit);
+        }
     }
 }
